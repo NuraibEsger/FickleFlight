@@ -1,0 +1,25 @@
+@import './sass/abstracts/colors';
+@import './sass/abstracts/variables';
+@import './sass/abstracts/media-query';
+
+@import './sass/base/base';
+@import './sass/base/reset';
+
+@import './sass/components/buttons';
+@import './sass/components/carousel';
+@import './sass/components/dropdown';
+
+@import './sass/layout/footer';
+@import './sass/layout/header';
+@import './sass/layout/sidebar';
+
+@import './sass/pages/about';
+@import './sass/pages/contact';
+
+@import './sass/utilities/container';
+@import './sass/utilities/exceptions';
+@import './sass/utilities/main';
+
+
+
+

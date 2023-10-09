@@ -1,0 +1,50 @@
+.search-background{
+    width: fixed;
+    height: 640px;
+    background: url("/assets/images/9b977bd47a30a4e543b4224bd388e353.png"), url("/assets/images/Banner\ Gradient.png") lightgray 50% / cover no-repeat;
+    flex-shrink: 0;
+}
+
+.home-tittle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    align-self: stretch;
+}
+
+.cursor-img{
+    cursor: pointer;
+}
+
+.input{
+    display: flex;
+    height: 100%;
+    padding: 0 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid var(--other-outlined-border, rgba(0, 0, 0, 0.23));
+}
+
+.label-container{
+    display: flex;
+    height: 2px;
+    padding: 0 4px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: var(--background-paper, #FFF);
+}
+
+.depat{
+    color: var(--text-secondary, rgba(0, 0, 0, 0.60));
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; /* 100% */
+    letter-spacing: 0.15px;
+}
