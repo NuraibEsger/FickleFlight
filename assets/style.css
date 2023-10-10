@@ -1,18 +1,9 @@
-li {
-  list-style: none;
-}
-
 a {
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-decoration: none;
-}
-
-img {
-  width: 100%;
 }
 
 h1 {
@@ -30,13 +21,54 @@ p {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 27px; /* 150% */
+  line-height: 27px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button-group {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.button-group-search {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #F99A0E;
+}
+.button-group-text {
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.46px;
+  text-transform: uppercase;
 }
 
 .header {
@@ -88,60 +120,6 @@ p {
 }
 .navbar-menu-hotels:hover {
   color: #1262AF;
-}
-.navbar .hamburger {
-  display: none;
-  cursor: pointer;
-}
-.navbar .hamburger-bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.3 ease-in-out;
-  background-color: #1262AF;
-}
-@media (max-width: 768px) {
-  .navbar .hamburger {
-    display: block;
-  }
-  .navbar .hamburger.active .hamburger-bar:nth-child(2) {
-    opacity: 0;
-  }
-  .navbar .hamburger.active .hamburger-bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .navbar .hamburger.active .hamburger-bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  .navbar .navbar-menu {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-  }
-  .navbar .navbar-menu-explore {
-    margin: 16px 0;
-  }
-  .navbar .navbar-menu-explore.active {
-    left: 0;
-  }
-  .navbar .navbar-menu-search {
-    margin: 16px 0;
-  }
-  .navbar .navbar-menu-search.active {
-    left: 0;
-  }
-  .navbar .navbar-menu-hotels {
-    margin: 16px 0;
-  }
-  .navbar .navbar-menu-hotels.active {
-    left: 0;
-  }
 }
 
 .search {
@@ -263,37 +241,6 @@ p {
   flex: 1 0 0;
   align-self: stretch;
 }
-.search-form-input .button-group {
-  width: 15%;
-  height: 100%;
-  display: flex;
-  padding: 5px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.search-form-input .button-group-search {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  background-color: #F99A0E;
-}
-.search-form-input .button-group-text {
-  text-align: center;
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Roboto;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0.46px;
-  text-transform: uppercase;
-}
 .search .container {
   display: flex;
   width: fixed;
@@ -311,10 +258,7 @@ p {
 }
 
 .search-background {
-  width: fixed;
-  height: 640px;
-  background: url("/assets/images/9b977bd47a30a4e543b4224bd388e353.png"), url("/assets/images/Banner Gradient.png") lightgray 50%/cover no-repeat;
-  flex-shrink: 0;
+  background: url("/assets/images/9b977bd47a30a4e543b4224bd388e353 (1).png"), url("/assets/images/Banner Gradient.png") lightgray 50%/cover no-repeat;
 }
 
 .home-tittle {
@@ -339,6 +283,15 @@ p {
   border-radius: 4px;
   border: 1px solid var(--other-outlined-border, rgba(0, 0, 0, 0.23));
 }
+.input-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 15px 0px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
 
 .label-container {
   display: flex;
@@ -350,7 +303,7 @@ p {
   background: var(--background-paper, #FFF);
 }
 
-.depat {
+.label-container-text {
   color: var(--text-secondary, rgba(0, 0, 0, 0.6));
   font-feature-settings: "clig" off, "liga" off;
   font-family: Roboto;
@@ -359,4 +312,10 @@ p {
   font-weight: 400;
   line-height: 12px; /* 100% */
   letter-spacing: 0.15px;
+}
+
+.search-input-text {
+  width: 100%;
+  height: 100%;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
