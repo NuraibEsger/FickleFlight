@@ -1,5 +1,4 @@
 .button-group{
-    width: 15%;
     height: 100%;
     display: flex;
     padding: 5px;
@@ -11,7 +10,6 @@
 
     &-search{
         display: flex;
-        width: 100%;
         height: 100%;
         flex-direction: column;
         justify-content: center;

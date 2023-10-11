@@ -1,3 +1,17 @@
+@media (max-width: 768px) {
+  .search-form-input {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-form-input-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .flight-option {
+    display: flex;
+    flex-direction: column;
+  }
+}
 a {
   font-family: Roboto;
   font-size: 14px;
@@ -24,6 +38,13 @@ p {
   line-height: 27px;
 }
 
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +60,6 @@ a {
 }
 
 .button-group {
-  width: 15%;
   height: 100%;
   display: flex;
   padding: 5px;
@@ -51,7 +71,6 @@ a {
 }
 .button-group-search {
   display: flex;
-  width: 100%;
   height: 100%;
   flex-direction: column;
   justify-content: center;
@@ -83,6 +102,7 @@ a {
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   flex: 1 0 0;
@@ -124,12 +144,11 @@ a {
 
 .search {
   width: 100%;
-  height: 640px;
-  align-self: stretch;
+  display: flex;
+  flex-direction: column;
 }
 .search-form {
   width: 100%;
-  height: 158px;
   display: flex;
   padding: 20px;
   flex-direction: column;
@@ -165,6 +184,9 @@ a {
   display: inline-flex;
   align-items: center;
 }
+.search-form-tittle-group .flight-option .radio-return :hover {
+  cursor: pointer;
+}
 .search-form-tittle-group .flight-option .radio-return-icon {
   display: flex;
   padding: 9px;
@@ -185,6 +207,9 @@ a {
   height: auto;
   display: inline-flex;
   align-items: center;
+}
+.search-form-tittle-group .flight-option .radio-one-way :hover {
+  cursor: pointer;
 }
 .search-form-tittle-group .flight-option .radio-one-way-text {
   color: #303030;
@@ -232,7 +257,6 @@ a {
   align-self: stretch;
 }
 .search-form-input-row-date {
-  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -242,15 +266,14 @@ a {
   align-self: stretch;
 }
 .search .container {
+  width: 100%;
   display: flex;
-  width: fixed;
   height: 640px;
   padding: 0px 140px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 43px;
-  flex-shrink: 0;
 }
 .search-header {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -266,11 +289,6 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  align-self: stretch;
-}
-
-.cursor-img {
-  cursor: pointer;
 }
 
 .input {

@@ -1,0 +1,16 @@
+@media (max-width:768px){
+    
+    .search-form-input{
+        display: flex;
+        flex-direction: column;
+
+        &-row{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .flight-option{
+        display: flex;
+        flex-direction: column;
+    }
+}
