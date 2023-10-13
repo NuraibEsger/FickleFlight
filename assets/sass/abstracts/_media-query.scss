@@ -1,6 +1,12 @@
-@media (max-width:768px){
+$breakpoint-tablet: 904px;
+$breakpoint-phone: 680px;
+
+
+
+@media (max-width:$breakpoint-tablet){
     
     .search-form-input{
+        width: 100%;
         display: flex;
         flex-direction: column;
 
@@ -12,5 +18,11 @@
     .flight-option{
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (max-width:$breakpoint-phone){
+    .search-header{
+        display: none;
     }
 }
