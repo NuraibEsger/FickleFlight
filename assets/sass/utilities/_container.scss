@@ -1,56 +1,138 @@
-.navbar{
+//header section
+.container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     flex: 1 0 0;
 
-    &-items{
+    &-navbar{
         display: flex;
         justify-content: flex-end;
         align-items: center;
         gap: 36px;
 
-        &-wishlist-icon{
-            cursor: pointer;
+        &-menu{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 36px;
+
+            @media screen and (max-width:768px) {
+                &{
+                    display: none;
+                }
+            }
+
+            &-explore{
+                color: $secondary-color;
+                font-family:$primary-font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            &-search{
+                color: $primary-color;
+                font-family:$primary-font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            &-hotels{
+                color: $secondary-color;
+                font-family:$primary-font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            &-wishlist{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+                cursor: pointer;
+            }
         }
     }
+    .hamburger{
+        position: relative;
+        display: none;
+        width: 35px;
+        cursor: pointer;
+        z-index: 99;
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+        @media screen and (max-width:768px) {
+            display: block;
+        }
+    
+    }
+    .hamburger .bar, .hamburger:after, .hamburger:before{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color:$primary-color;
+        margin: 6px 0px;
+        transition: 0.4s;
+    }
+    .hamburger.is-active:before{
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+    
+    .hamburger.is-active:after{
+        transform: rotate(45deg) translate(-9px, -9px);
+    }
+    
+    .hamburger.is-active .bar{
+        opacity: 0;
+    }
+}
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    padding-top: 120px;
+    transition: 0.4s;
+    background-color: $third-color;
+    &.is-active{
+        left: 0;
+     }
 
-    &-menu{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
+    a{
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto 16px;
+        text-align: center;
+        padding: 12px 16px;
+        background-color: $primary-color;
 
-        &-explore{
-            color: $primary-color;
-            transition: 0.7 ease;
-        }
-        &-explore:hover{
-            color: $primary-color;
-        }
+        color: $third-color;
+        text-decoration: none;
 
-        &-search{
-            color: $secondary-color;
+        &:hover{
+            background-color: $secondary-color;
+            min-width: 768px;
         }
-        &-search:hover{
-            color: $primary-color;
-        }
-
-        &-hotels{
-            color: $secondary-color;
-        }
-        &-hotels:hover{
-            color: $primary-color;
-        }
-
     }
 }
 
+//search section
 .search{
     width: 100%;
+    height: 640px;
     display: flex;
     flex-direction: column;
+    background: url("/assets/images/9b977bd47a30a4e543b4224bd388e353\ \(1\).png"), url("/assets/images/Banner\ Gradient.png") lightgray 50% / cover no-repeat;
 
     &-form{
         width: 100%;
@@ -77,61 +159,9 @@
                 height: auto;
             }
 
-            .flight-option{
-                width: 21%;
-                height: auto;
+            .search-label {
                 display: flex;
-                align-items: center;
-                gap: 5px;
-
-                .radio-return{
-                    width: 50%;
-                    height: auto;
-                    display: inline-flex;
-                    align-items: center;
-
-                    :hover{
-                        cursor: pointer;
-                    }
-
-                    &-icon{
-                        display: flex;
-                        padding: 9px;
-                        align-items: center;
-                        gap: 10px;
-                    }
-
-                    &-text{
-                        color: $text-color;
-                        font-family: Roboto;
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 150%;
-                        letter-spacing: 0.15px;
-                    }
-                }
-
-                .radio-one-way{
-                    width: 50%;
-                    height: auto;
-                    display: inline-flex;
-                    align-items: center;
-
-                    :hover{
-                        cursor: pointer;
-                    }
-
-                    &-text{
-                        color: $text-color;
-                        font-family: Roboto;
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        font-weight: 150%;
-                        letter-spacing: 0.15px;
-                    }
-                }
+                gap: 18px;
             }
         }
 
@@ -197,12 +227,267 @@
         align-items: center;
         gap: 43px;
 
-        @media (max-width:500px) {
-            display: none;
+        
+        @media (max-width:$breakpoint-phone)  {
+            padding: 0px;
+        }
+        @media (max-width:$breakpoint-tablet)  {
+            padding: 20px;
         }
     }
     &-header{
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         text-align: center;
     }
+    @media (max-width:$breakpoint-tablet){
+        .search-form-input{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+    
+            &-row{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+        .search-header{
+            display: none;
+        }
+
+        .flight-option{
+            display: flex;
+        }
+        .button-group{
+            width: 100%;
+        }
+    }
 }
+
+//home section
+.home{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 0 88px;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+
+    .flight-search{   
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+        
+        &-text{
+            align-self: stretch;
+            color: #303030;
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.72px;
+            text-transform: uppercase;
+        }
+
+        &-details{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 36px;
+            align-self: stretch;
+        }
+
+        &-recent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            align-self: stretch;
+
+            &-main{
+                display: flex;
+                padding: 20px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 21px;
+                flex: 1 0 0;
+            }
+
+            &-details{
+                width: 44.727px;
+                height: 28px;
+                &-text{
+                    width: 44.727px;
+                    color:$primary-color;
+                    font-family: Roboto;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.96px;
+                    text-transform: capitalize;
+                }   
+            }
+        } 
+        &-to-from{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-self: stretch;
+
+            &-text{
+                color: #000;
+                font-family: Roboto;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.8px;
+                text-transform: capitalize;
+            }
+        }
+
+        &-duration{
+            width: 117.351px;
+            height: 24px;
+        }
+
+        &-prepare{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            align-self: stretch;
+
+            &-text{
+                align-self: stretch;
+                color: #CECECE;
+                font-family: Roboto;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.72px;
+                text-transform: uppercase;
+            }
+
+            &-menu{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                align-self: stretch;
+                
+                .trip-sections{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    cursor: pointer;
+                    
+                    .trip-names{
+                        color: #8E8E94;
+                        font-family: Roboto;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 0.6px;
+                    }
+                }
+            }
+        }
+    }
+
+    .destination{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+        
+        .title-container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 6px;
+            flex: 1 0 0;
+
+            &-first{
+                color:$primary-color;
+                font-family: Roboto;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.72px;
+                text-transform: uppercase;
+            }
+            &-second{
+                color:$text-color;
+                font-family: Roboto;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1.2px;
+                text-transform: capitalize;
+            }
+        }
+        .card-container {
+            display: flex;
+            align-self: stretch;
+            justify-content: space-between;
+
+            .col{
+                display: flex;
+                width: 320px;
+                padding: 0px 16px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                .paris{
+                    width: 100%;
+                    height: 182px;
+                    align-self: stretch;
+                    border-radius: 10px;
+                    background: url("/assets/images/ParisImage.png"), lightgray 50% / cover no-repeat, #C4C4C4;
+                }
+            }
+
+            .col:hover {
+                transform: scale(1.1);
+            }
+        }
+        &-details{
+           display: flex;
+           width: 287.414px;
+           align-items: flex-start; 
+        }
+    }
+    .recommended-holidays{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+    }
+    .popular-stays{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    }
+}
+

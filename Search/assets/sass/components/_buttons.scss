@@ -1,0 +1,46 @@
+.search-button{
+    width: auto;
+    height: auto;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    &-flight{
+        display: flex;
+        width: 164px;
+        height: 56px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background-color: $button-color;
+    }
+}
+
+.footer-button{
+    width: 164px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: $button-color;
+
+    &-text{
+        color: var(--primary-contrast,$third-color);
+        font-feature-settings: 'clig' off, 'liga' off;
+        
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.46px;
+        text-transform: uppercase;
+    }
+}

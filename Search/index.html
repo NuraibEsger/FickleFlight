@@ -31,18 +31,22 @@
         <li><a class="container-navbar-menu-explore" href="">Explore</a></li>
         <li><a class="container-navbar-menu-search" href="">Search</a></li>
         <li><a class="container-navbar-menu-hotels" href="">Hotels</a></li>
-        <div class="container-navbar-menu-wishlist">
-            <i class="fa-regular fa-heart"></i>
-        </div>
     </nav>
 
     <!-- section -->
     <section class="search">
             <div class="search-container">
-                <h1>Where are you off too?</h1>
+                <h1 class="search-container-text">Where are you off too?</h1>
                 <div class="search-container-form">
                     <div class="search-input">
-                        <div class="search-input-group"></div>
+                        <div class="search-input-group">
+                            <div class="search-input-group-dpt">
+                                <p class="search-input-group-dpt-text">Departure</p>
+                            </div>
+                            <div class="search-input-group-active">
+                                <input type="text" class="search-input-group-active-text">
+                            </div>
+                        </div>
                         <div class="search-input-group"></div>
                         <div class="search-input-group"></div>
                     </div>
@@ -54,6 +58,83 @@
                 </div>
             </div>
     </section>
+
+    <section class="result">
+        <div class="search-filters">
+            <div class="result-summary">
+                <div class="frame">
+                    <p class="frame-text">10 out 177 Results</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="228" height="2" viewBox="0 0 228 2" fill="none">
+                        <path d="M0 1H228" stroke="#EAEAEA"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="stops">
+                <p class="stops-text">Stops</p>
+                <div class="stops-checkbox"></div>
+                <div class="stops-checkbox"></div>
+            </div>
+            <div class="booking-options">
+                <p class="booking-options-text">Booking Options</p>
+                <div class="booking-options-checkbox"></div>
+                <div class="booking-options-checkbox"></div>
+            </div>
+            <div class="flight-experience">
+                <p class="flight-experience-text">Flight Experience</p>
+                <div class="flight-experience-checkbox"></div>
+                <div class="flight-experience-checkbox"></div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="228" height="2" viewBox="0 0 228 2" fill="none">
+                <path d="M0 1H228" stroke="#EAEAEA"/>
+            </svg>
+            <div class="airlines">
+                <p class="airlines-text"></p>
+                <div class="airlines-checkbox"></div>
+                <div class="airlines-checkbox"></div>
+            </div>
+        </div>
+
+        <div class="result-section">
+            <div class="flight-cards"></div>
+            <div class="recently-booked">
+                <div class="recently-booked-tittle">
+                    <p class="recently-booked-tittle-text">ADD'S</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="257" height="2" viewBox="0 0 257 2" fill="none">
+                        <path d="M0 1H257" stroke="#EAEAEA"/>
+                    </svg>
+                </div>
+                <div class="recently-booked-azal">
+                    <img src="./assets/images/download.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-form">
+                <div class="footer-form-header">
+                    <h6 class="footer-form-header-first">SUBSCRIBE TO OUR NEWSLETTER</h6>
+                    <h2 class="footer-form-header-second"> Get weekly uptades</h2>
+                </div>
+                <div class="footer-form-subscribe">
+                    <div class="footer-form-text"><p>Fill in your details to join the party!</p></div>
+                    <div class="footer-form-fields">
+                        <div class="footer-btn">
+                            <input type="text" class="footer-input" placeholder="Your Email">
+                        </div>
+                        <div class="footer-btn">
+                            <input type="text" class="footer-input" placeholder="Email Adress">
+                        </div>
+                    </div>
+                    <button class="footer-button"><p class="footer-button-text">SUBMIT</p></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end"></div>
+    </footer>
+
 
     <script src="./script/main.js"></script>
 </body>
