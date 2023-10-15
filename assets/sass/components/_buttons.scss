@@ -29,3 +29,30 @@
         text-transform: uppercase;
     }
 }
+
+.view-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.popular-view-button{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    &-text{
+        width: 140.659px;
+        color: $primary-color;
+        text-align: right;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.72px;
+    }
+}
