@@ -7,6 +7,7 @@
 
     &-navbar{
         display: flex;
+        
         justify-content: flex-end;
         align-items: center;
         gap: 36px;
@@ -172,6 +173,16 @@
             align-items: flex-start;
             align-self: stretch;
 
+            #second-form{
+                display: none;
+                width: 85%;
+                height: 100%;
+                padding: 5px;
+                align-items: flex-start;
+                gap: 10px;
+                flex: 1 0 0;
+            }
+
             &-row{
                 width: 85%;
                 height: 100%;
@@ -180,6 +191,8 @@
                 align-items: flex-start;
                 gap: 10px;
                 flex: 1 0 0;
+
+                
 
                 &-dpt{
                     width: 100%;

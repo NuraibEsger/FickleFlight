@@ -295,6 +295,15 @@ a {
   align-items: flex-start;
   align-self: stretch;
 }
+.search-form-input #second-form {
+  display: none;
+  width: 85%;
+  height: 100%;
+  padding: 5px;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+}
 .search-form-input-row {
   width: 85%;
   height: 100%;
