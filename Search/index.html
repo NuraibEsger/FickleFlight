@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fabec4b8cd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/sass/style.css">
-    <title>FickleFlight</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
 </head>
 <body>
-    <!-- header -->
+    <!-- header section -->
     <header class="header">
         <div class="container">
             <img src="./assets/images/Fickleflight Logo.png" alt="">
@@ -33,109 +33,178 @@
         <li><a class="container-navbar-menu-hotels" href="">Hotels</a></li>
     </nav>
 
-    <!-- section -->
+    <!-- Search Section -->
     <section class="search">
-            <div class="search-container">
-                <h1 class="search-container-text">Where are you off too?</h1>
-                <div class="search-container-form">
-                    <div class="search-input">
-                        <div class="search-input-group">
-                            <div class="search-input-group-dpt">
-                                <p class="search-input-group-dpt-text">Departure</p>
+            <div class="container">
+                <div class="home-tittle">
+                    <h1 class="search-header">Let's explore&travel the world</h1>
+                    <p>Find the best destination and the most popular stays!</p>
+                </div>
+                
+                <div class="search-form">
+                    <div class="search-form-tittle-group">
+                        <h2 class="search-form-tittle-group-text">Search flights</h2>
+                        <div class="search-label">
+                            <div class="return">
+                                <input type="radio" id="return" name="fav_language" value="return">
+                                <label for="html">Return</label>
                             </div>
-                            <div class="search-input-group-active">
-                                <input type="text" class="search-input-group-active-text">
+
+                            <div class="one-way">
+                                <input type="radio" id="one-way" name="fav_language" value="one-way">
+                                <label for="html">One Way</label>
                             </div>
                         </div>
-                        <div class="search-input-group"></div>
-                        <div class="search-input-group"></div>
                     </div>
-                    <div class="search-button">
-                        <div class="search-button-flight">
-                            <p>SEARCH FLIGHT</p>
+                    <div class="search-form-input", id="search-form-input">
+                        <div class="search-form-input-row">
+                            <div class="search-form-input-row-dpt">
+                                <div class="input">
+                                    <div class="label-container"><p class="label-container-text">Departure</p></div>
+                                    <div class="input-text">
+                                        <input class="search-input-text" type="text" placeholder="Singapure (SIN)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-form-input-row-arr">
+                                <div class="input">
+                                    <div class="label-container"><p class="label-container-text">Arrival</p></div>
+                                    <div class="input-text">
+                                        <input class="search-input-text" type="text" placeholder="LosAngeles (LA)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-form-input-row-date">
+                                <div class="input">
+                                    <div class="label-container"><p class="label-container-text">Date</p></div>
+                                    <div class="input-text">
+                                        <input class="search-input-text" type="date">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="second-form">
+                            <div class="search-form-input-row">
+                                <div class="search-form-input-row-dpt">
+                                    <div class="input">
+                                        <div class="label-container"><p class="label-container-text">Departure</p></div>
+                                        <div class="input-text">
+                                            <input class="search-input-text" type="text" placeholder="Singapure (SIN)">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-form-input-row-arr">
+                                    <div class="input">
+                                        <div class="label-container"><p class="label-container-text">Arrival</p></div>
+                                        <div class="input-text">
+                                            <input class="search-input-text" type="text" placeholder="LosAngeles (LA)">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="search-form-input-row-date">
+                                    <div class="input">
+                                        <div class="label-container"><p class="label-container-text">Date</p></div>
+                                        <div class="input-text">
+                                            <input class="search-input-text" type="date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <div class="button-group-search">
+                                <p class="button-group-text">SEARCH FLIGHTS</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
 
+    <!-- Result section -->
     <section class="result">
         <div class="search-filters">
-            <div class="result-summary">
-                <div class="frame">
-                    <p class="frame-text">10 out 177 Results</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="228" height="2" viewBox="0 0 228 2" fill="none">
-                        <path d="M0 1H228" stroke="#EAEAEA"/>
-                    </svg>
-                </div>
+            <div class="frame-2271">
+                <p>10 out of 177 Results</p>
+                <div class="vector"></div>
             </div>
             <div class="stops">
                 <p class="stops-text">Stops</p>
-                <div class="stops-checkbox"></div>
-                <div class="stops-checkbox"></div>
+                <div class="check-box"><input class="check-box-input" type="radio"><p class="check-box-text">1 Stop</p></div>
+                <div class="check-box"><input class="check-box-input" type="radio"><p class="check-box-text">2 Stops</p></div>
             </div>
-            <div class="booking-options">
-                <p class="booking-options-text">Booking Options</p>
-                <div class="booking-options-checkbox"></div>
-                <div class="booking-options-checkbox"></div>
-            </div>
-            <div class="flight-experience">
-                <p class="flight-experience-text">Flight Experience</p>
-                <div class="flight-experience-checkbox"></div>
-                <div class="flight-experience-checkbox"></div>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="228" height="2" viewBox="0 0 228 2" fill="none">
-                <path d="M0 1H228" stroke="#EAEAEA"/>
-            </svg>
-            <div class="airlines">
-                <p class="airlines-text"></p>
-                <div class="airlines-checkbox"></div>
-                <div class="airlines-checkbox"></div>
+            <div class="booking">
+                <p class="booking-text">Booking Options</p>
+                <div class="check-box"><input class="check-box-input" type="radio"><p class="check-box-text">Book on Fickleflight</p></div>
+                <div class="check-box"><input class="check-box-input" type="radio"><p class="check-box-text">Official Airline Websites</p></div>
             </div>
         </div>
-
-        <div class="result-section">
-            <div class="flight-cards"></div>
-            <div class="recently-booked">
-                <div class="recently-booked-tittle">
-                    <p class="recently-booked-tittle-text">ADD'S</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="257" height="2" viewBox="0 0 257 2" fill="none">
-                        <path d="M0 1H257" stroke="#EAEAEA"/>
-                    </svg>
-                </div>
-                <div class="recently-booked-azal">
-                    <img src="./assets/images/download.png" alt="">
-                </div>
-            </div>
-        </div>
+        <div class="results"></div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer">
-            <div class="footer-form">
-                <div class="footer-form-header">
-                    <h6 class="footer-form-header-first">SUBSCRIBE TO OUR NEWSLETTER</h6>
-                    <h2 class="footer-form-header-second"> Get weekly uptades</h2>
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="subscribe">
+            <div class="subscribe-box">
+                <div class="form-header">
+                    <p class="first-text"> to our newsletter</p>
+                    <p class="second-text">Get weekly updates</p>
                 </div>
-                <div class="footer-form-subscribe">
-                    <div class="footer-form-text"><p>Fill in your details to join the party!</p></div>
-                    <div class="footer-form-fields">
-                        <div class="footer-btn">
-                            <input type="text" class="footer-input" placeholder="Your Email">
+                <form class="subscribe-form">
+                    <p class="form-text">Fill in your details to join the party!</p>
+                    <div class="form-fields">
+                        <div class="name-field">
+                            <input type="text" placeholder="Your name">
                         </div>
-                        <div class="footer-btn">
-                            <input type="text" class="footer-input" placeholder="Email Adress">
+                        <div class="mail-field">
+                            <input type="text" placeholder="Email address">
                         </div>
                     </div>
-                    <button class="footer-button"><p class="footer-button-text">SUBMIT</p></button>
+                    <div class="submit-button">
+                        <p>submit</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-end">
+            <div class="bio">
+                <img src="/assets/images/Logo.png" alt="">
+                <p class="bio-text">Fickle Flight is your one-stop travel portal.
+                    We offer hassle free flight and hotel bookings.
+                    We also have all your flight needs in you online shop.
+                </p>
+                <div class="social-icon">
+                    <img src="assets/images/Facebook Icon.png" alt="" class="social-img">
+                    <img src="assets/images/Instagram Icon.png" alt="" class="social-img">
+                    <img src="assets/images/Twitter Icon.png" alt="" class="social-img">
+                </div>
+            </div>
+            <div class="links">
+                <div class="company">
+                    <p class="link-title">Company</p>
+                    <a href="#" class="link">About Us</a>
+                    <a href="#" class="link">News</a>
+                    <a href="#" class="link">Careers</a>
+                    <a href="#" class="link">How we work</a>
+                </div>
+                <div class="support">
+                    <p class="link-title">Support</p>
+                    <a href="#" class="link">Account</a>
+                    <a href="#" class="link">Support Center</a>
+                    <a href="#" class="link">FAQ</a>
+                    <a href="#" class="link">Accessibility</a>
+                </div>
+                <div class="more">
+                    <p class="link-title">More</p>
+                    <a href="#" class="link">Covid Advisory</a>
+                    <a href="#" class="link">Airline Fees</a>
+                    <a href="#" class="link">Tips</a>
+                    <a href="#" class="link">Quarantine Rules</a>
                 </div>
             </div>
         </div>
-        <div class="footer-end"></div>
     </footer>
 
-
-    <script src="./script/main.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

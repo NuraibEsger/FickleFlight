@@ -6,4 +6,8 @@
     align-items: center;
     gap:10px;
     align-self: stretch;
+
+    @media (max-width:510px) {
+        padding: 22px 20px;
+    }
 }

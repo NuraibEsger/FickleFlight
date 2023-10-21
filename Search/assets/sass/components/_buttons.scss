@@ -1,6 +1,5 @@
-.search-button{
-    width: auto;
-    height: auto;
+.button-group{
+    height: 100%;
     display: flex;
     padding: 5px;
     flex-direction: column;
@@ -9,38 +8,51 @@
     gap: 10px;
     cursor: pointer;
 
-    &-flight{
+    &-search{
         display: flex;
-        width: 164px;
-        height: 56px;
+        height: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border-radius: 4px;
         background-color: $button-color;
     }
-}
-
-.footer-button{
-    width: 164px;
-    height: 56px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    background: $button-color;
-
     &-text{
-        color: var(--primary-contrast,$third-color);
+        text-align: center;
         font-feature-settings: 'clig' off, 'liga' off;
-        
-        font-family: Roboto;
+        font-family: $primary-font;
         font-size: 15px;
         font-style: normal;
         font-weight: 500;
         line-height: 26px;
         letter-spacing: 0.46px;
         text-transform: uppercase;
+    }
+}
+
+.view-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.popular-view-button{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    &-text{
+        width: 140.659px;
+        color: $primary-color;
+        text-align: right;
+        font-family: $primary-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.72px;
     }
 }
