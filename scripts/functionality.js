@@ -1,4 +1,4 @@
-let hotels = document.querySelector(".hotel-cards")
+let hotels = document.querySelector(".hotel-col")
 
 async function popHotels(){
     let res = await fetch(("http://localhost:4000/popularhotels"))

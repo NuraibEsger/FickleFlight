@@ -296,12 +296,16 @@ button {
   background: rgba(18, 98, 175, 0.05);
 }
 
-@media (max-width: 1250px) {
-  .map-img {
-    display: none;
-  }
+@media (max-width: 1000px) {
   .results {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+  }
+}
+@media (max-width: 856px) {
+  .hotels {
+    padding: 30px;
   }
 }
 @media (max-width: 534px) {
@@ -309,13 +313,16 @@ button {
     display: flex;
     flex-direction: column;
   }
+  .map-img {
+    display: none;
+  }
 }
 @media (max-width: 400px) {
   .header {
     padding: 22px 30px;
   }
   .hotels {
-    padding: 50px 40px;
+    padding: 0;
   }
 }
 .footer {

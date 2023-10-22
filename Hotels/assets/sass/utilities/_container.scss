@@ -262,13 +262,17 @@
     }
 }
 
-@media (max-width:1250px) {
-    .map-img{
-        display: none;
-    }
-    
+@media (max-width:1000px) {
     .results{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+    }
+}
+
+@media (max-width:856px) {
+    .hotels{
+        padding: 30px;
     }
 }
 
@@ -276,6 +280,10 @@
     .col{
         display: flex;
         flex-direction: column;
+    }
+    
+    .map-img{
+        display: none;
     }
 }
 
@@ -285,7 +293,7 @@
     }
 
     .hotels{
-        padding: 50px 40px;
+        padding: 0
     }
 }
 

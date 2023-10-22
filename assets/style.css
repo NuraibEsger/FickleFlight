@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  font-family: Roboto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -25,7 +25,7 @@ h1 {
 
 p {
   color: #FFF;
-  font-family: Roboto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -41,7 +41,7 @@ ul {
 
 span {
   color: #000;
-  font-family: Roboto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -62,6 +62,10 @@ li {
 
 a {
   text-decoration: none;
+}
+
+button {
+  border: none;
 }
 
 .button-group {
@@ -396,6 +400,16 @@ a {
   align-items: center;
   gap: 80px;
 }
+@media (max-width: 425px) {
+  .home {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 320px) {
+  .home {
+    padding: 0;
+  }
+}
 .home .flight-search {
   display: flex;
   flex-direction: column;
@@ -437,6 +451,11 @@ a {
   align-items: center;
   gap: 21px;
   flex: 1 0 0;
+}
+@media (max-width: 350px) {
+  .home .flight-search-recent-main {
+    padding: 0;
+  }
 }
 .home .flight-search-recent-details {
   width: 44.727px;
@@ -498,6 +517,14 @@ a {
   align-items: flex-start;
   align-self: stretch;
 }
+@media (max-width: 600px) {
+  .home .flight-search-prepare-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+}
 .home .flight-search-prepare-menu .trip-sections {
   display: flex;
   flex-direction: column;
@@ -521,6 +548,14 @@ a {
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
+}
+@media (max-width: 768px) {
+  .home .destination {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .home .destination .title-container {
   display: flex;
@@ -554,6 +589,14 @@ a {
   align-items: flex-start;
   align-self: stretch;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .home .destination .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .home .destination .cards-container .col {
   display: flex;
@@ -636,6 +679,14 @@ a {
   align-items: center;
   align-self: stretch;
 }
+@media (max-width: 768px) {
+  .home .recommended-holidays .rec-tittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home .recommended-holidays .rec-tittle-text {
   color: #303030;
   font-family: Roboto;
@@ -651,6 +702,14 @@ a {
   display: flex;
   align-items: flex-start;
   align-self: stretch;
+}
+@media (max-width: 768px) {
+  .home .recommended-holidays .rec-cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .home .recommended-holidays .rec-cards-container .rec-card {
   display: flex;
@@ -737,6 +796,14 @@ a {
   align-items: center;
   align-self: stretch;
 }
+@media (max-width: 768px) {
+  .home .popular-stays .stays-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home .popular-stays .stays-header .stays-title {
   height: 35px;
   flex: 1 0 0;
@@ -780,6 +847,14 @@ a {
   align-items: center;
   justify-content: space-between;
   align-items: stretch;
+}
+@media (max-width: 768px) {
+  .home .popular-stays .hotel-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .home .popular-stays .hotel-cards .hotel-col {
   display: flex;
@@ -954,6 +1029,7 @@ a {
   .flight-search-prepare-menu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 20px;
   }
 }
@@ -992,7 +1068,7 @@ a {
 .footer .subscribe .subscribe-box .form-header .first-text {
   color: #1262AE;
   text-align: center;
-  font-family: Roboto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -1004,7 +1080,7 @@ a {
 .footer .subscribe .subscribe-box .form-header .second-text {
   color: #434343;
   text-align: center;
-  font-family: Roboto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -1024,7 +1100,7 @@ a {
 }
 .footer .subscribe .subscribe-box .subscribe-form .form-text {
   color: #576074;
-  font-family: Roboto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1084,7 +1160,7 @@ a {
 .footer .subscribe .subscribe-box .subscribe-form .submit-button p {
   color: var(--primary-contrast, #FFF);
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Roboto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -1113,7 +1189,7 @@ a {
 }
 .footer .footer-end .bio .bio-text {
   color: #FFF;
-  font-family: Roboto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1157,7 +1233,7 @@ a {
 }
 .footer .footer-end .links .company .link-title, .footer .footer-end .links .support .link-title, .footer .footer-end .links .more .link-title {
   color: #FFF;
-  font-family: Roboto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -1166,7 +1242,7 @@ a {
 }
 .footer .footer-end .links .company .link, .footer .footer-end .links .support .link, .footer .footer-end .links .more .link {
   color: #FFF;
-  font-family: Roboto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1212,7 +1288,7 @@ a {
   .footer .subscribe .subscribe-box .form-header .first-text {
     color: #1262AE;
     text-align: center;
-    font-family: Roboto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -1224,7 +1300,7 @@ a {
   .footer .subscribe .subscribe-box .form-header .second-text {
     color: #434343;
     text-align: center;
-    font-family: Roboto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -1244,7 +1320,7 @@ a {
   }
   .footer .subscribe .subscribe-box .subscribe-form .form-text {
     color: #576074;
-    font-family: Roboto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1304,7 +1380,7 @@ a {
   .footer .subscribe .subscribe-box .subscribe-form .submit-button p {
     color: var(--primary-contrast, #FFF);
     font-feature-settings: "clig" off, "liga" off;
-    font-family: Roboto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -1336,7 +1412,7 @@ a {
   }
   .footer-end .bio .bio-text {
     color: #FFF;
-    font-family: Roboto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -1372,7 +1448,7 @@ a {
   }
   .footer-end .links .company .link-title, .footer-end .links .support .link-title, .footer-end .links .more .link-title {
     color: #FFF;
-    font-family: Roboto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -1381,12 +1457,15 @@ a {
   }
   .footer-end .links .company .link, .footer-end .links .support .link, .footer-end .links .more .link {
     color: #FFF;
-    font-family: Roboto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-top: 5px;
+  }
+  .bio {
+    display: none;
   }
 }
 .home-tittle {

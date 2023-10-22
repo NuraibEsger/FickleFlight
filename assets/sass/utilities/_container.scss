@@ -287,6 +287,14 @@
     align-items: center;
     gap: 80px;
 
+    @media (max-width:425px) {
+        padding: 0 40px;
+    }
+
+    @media (max-width:320px) {
+        padding: 0;
+    }
+
     .flight-search{   
         display: flex;
         flex-direction: column;
@@ -330,6 +338,10 @@
                 align-items: center;
                 gap: 21px;
                 flex: 1 0 0;
+
+                @media (max-width:350px) {
+                    padding: 0;
+                }
             }
 
             &-details{
@@ -396,7 +408,14 @@
                 justify-content: space-between;
                 align-items: flex-start;
                 align-self: stretch;
-                
+
+                @media (max-width:600px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-self: center;
+                }
+
                 .trip-sections{
                     display: flex;
                     flex-direction: column;
@@ -404,7 +423,7 @@
                     align-items: center;
                     gap: 8px;
                     cursor: pointer;
-                    
+
                     .trip-names{
                         color: #8E8E94;
                         font-family: Roboto;
@@ -425,7 +444,14 @@
         align-items: flex-start;
         gap: 24px;
         align-self: stretch;
-        
+
+        @media (max-width:768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         .title-container{
             display: flex;
             flex-direction: column;
@@ -459,6 +485,13 @@
             align-items: flex-start;
             align-self: stretch;
             justify-content: space-between;
+
+            @media (max-width:768px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
             .col{
                 display: flex;
@@ -549,6 +582,13 @@
             align-items: center;
             align-self: stretch;
 
+            @media (max-width:768px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
             &-text{
                 color: $text-color;
                 font-family: Roboto;
@@ -567,6 +607,13 @@
             display: flex;
             align-items: flex-start;
             align-self: stretch;
+
+            @media (max-width:768px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
             .rec-card{
                 display: flex;
@@ -663,6 +710,14 @@
             align-items: center;
             align-self: stretch;
 
+            @media (max-width:768px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+
             .stays-title {
                 height: 35px;
                 flex: 1 0 0;
@@ -712,6 +767,14 @@
             align-items: center;
             justify-content: space-between;
             align-items: stretch;
+
+            @media (max-width:768px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
 
             .hotel-col {
                 display: flex;
@@ -915,6 +978,7 @@
     .flight-search-prepare-menu{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         row-gap: 20px;
     }
 }
