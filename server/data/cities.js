@@ -26,7 +26,7 @@ export let DPopularCities = [{
     image:"assets/images/TuscanyImage.png"
 }]
 
-export let DCitiesPlan = [{
+export let DCities = [{
         id:5,
         destinationName:"Bali",
         destinationPrice: 899,
