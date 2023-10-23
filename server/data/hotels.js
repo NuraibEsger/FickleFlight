@@ -24,7 +24,7 @@ export let DPopularHotels=[
     {
         id:3,
         typeof:"Deluxe",
-        tittle:"Arctic Hut ",
+        tittle:"Arctic Hut",
         img:"assets\images\Arctic Hut Image.png",
         price:{amount:420, currency:"USD"},
         review:{

@@ -24,7 +24,7 @@ export let DPopularCities = [{
     destinationName:"Tuscany",
     destinationPrice: 1245,
     image:"assets/images/TuscanyImage.png"
-}]
+}];
 
 export let DCities = [{
         id:5,
@@ -52,4 +52,4 @@ export let DCities = [{
         destinationName:"Palawan",
         destinationPrice: 789,
         image:"assets/images/PalawanImage.png"
-    }]
+    }];

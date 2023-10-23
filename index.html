@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fabec4b8cd.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./assets/style.css">
     <title>FickleFlight</title>
 </head>
+
 <body>
     <!-- header section -->
     <header class="header">
@@ -33,35 +36,70 @@
         <li><a class="container-navbar-menu-hotels" href="/Hotels/index.html">Hotels</a></li>
     </nav>
 
-<!-- Search Section -->
+    <!-- Search Section -->
 
     <section class="search">
-            <div class="container">
-                <div class="home-tittle">
-                    <h1 class="search-header">Let's explore&travel the world</h1>
-                    <p>Find the best destination and the most popular stays!</p>
-                </div>
-                
-                <div class="search-form">
-                    <div class="search-form-tittle-group">
-                        <h2 class="search-form-tittle-group-text">Search flights</h2>
-                        <div class="search-label">
-                            <div class="return">
-                                <input type="radio" id="return" name="fav_language" value="return">
-                                <label for="html">Return</label>
-                            </div>
+        <div class="container">
+            <div class="home-tittle">
+                <h1 class="search-header">Let's explore&travel the world</h1>
+                <p>Find the best destination and the most popular stays!</p>
+            </div>
 
-                            <div class="one-way">
-                                <input type="radio" id="one-way" name="fav_language" value="one-way">
-                                <label for="html">One Way</label>
+            <div class="search-form">
+                <div class="search-form-tittle-group">
+                    <h2 class="search-form-tittle-group-text">Search flights</h2>
+                    <div class="search-label">
+                        <div class="return">
+                            <input type="radio" id="return" name="fav_language" value="return">
+                            <label for="html">Return</label>
+                        </div>
+
+                        <div class="one-way">
+                            <input type="radio" id="one-way" name="fav_language" value="one-way">
+                            <label for="html">One Way</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-form-input" , id="search-form-input">
+                    <div class="search-form-input-row">
+                        <div class="search-form-input-row-dpt">
+                            <div class="input">
+                                <div class="label-container">
+                                    <p class="label-container-text">Departure</p>
+                                </div>
+                                <div class="input-text">
+                                    <input class="search-input-text" type="text" placeholder="Singapure (SIN)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-form-input-row-arr">
+                            <div class="input">
+                                <div class="label-container">
+                                    <p class="label-container-text">Arrival</p>
+                                </div>
+                                <div class="input-text">
+                                    <input class="search-input-text" type="text" placeholder="LosAngeles (LA)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-form-input-row-date">
+                            <div class="input">
+                                <div class="label-container">
+                                    <p class="label-container-text">Date</p>
+                                </div>
+                                <div class="input-text">
+                                    <input class="search-input-text" type="date">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="search-form-input", id="search-form-input">
+                    <div id="second-form">
                         <div class="search-form-input-row">
                             <div class="search-form-input-row-dpt">
                                 <div class="input">
-                                    <div class="label-container"><p class="label-container-text">Departure</p></div>
+                                    <div class="label-container">
+                                        <p class="label-container-text">Departure</p>
+                                    </div>
                                     <div class="input-text">
                                         <input class="search-input-text" type="text" placeholder="Singapure (SIN)">
                                     </div>
@@ -69,7 +107,9 @@
                             </div>
                             <div class="search-form-input-row-arr">
                                 <div class="input">
-                                    <div class="label-container"><p class="label-container-text">Arrival</p></div>
+                                    <div class="label-container">
+                                        <p class="label-container-text">Arrival</p>
+                                    </div>
                                     <div class="input-text">
                                         <input class="search-input-text" type="text" placeholder="LosAngeles (LA)">
                                     </div>
@@ -77,52 +117,27 @@
                             </div>
                             <div class="search-form-input-row-date">
                                 <div class="input">
-                                    <div class="label-container"><p class="label-container-text">Date</p></div>
+                                    <div class="label-container">
+                                        <p class="label-container-text">Date</p>
+                                    </div>
                                     <div class="input-text">
                                         <input class="search-input-text" type="date">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="second-form">
-                            <div class="search-form-input-row">
-                                <div class="search-form-input-row-dpt">
-                                    <div class="input">
-                                        <div class="label-container"><p class="label-container-text">Departure</p></div>
-                                        <div class="input-text">
-                                            <input class="search-input-text" type="text" placeholder="Singapure (SIN)">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-form-input-row-arr">
-                                    <div class="input">
-                                        <div class="label-container"><p class="label-container-text">Arrival</p></div>
-                                        <div class="input-text">
-                                            <input class="search-input-text" type="text" placeholder="LosAngeles (LA)">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="search-form-input-row-date">
-                                    <div class="input">
-                                        <div class="label-container"><p class="label-container-text">Date</p></div>
-                                        <div class="input-text">
-                                            <input class="search-input-text" type="date">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="button-group">
-                            <div class="button-group-search">
-                                <p class="button-group-text">SEARCH FLIGHTS</p>
-                            </div>
+                    </div>
+                    <div class="button-group">
+                        <div class="button-group-search">
+                            <p class="button-group-text">SEARCH FLIGHTS</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
-<!-- Home Section -->
+    <!-- Home Section -->
 
     <section class="home">
         <div class="flight-search">
@@ -131,11 +146,15 @@
                 <div class="flight-search-recent">
                     <div class="flight-search-recent-main">
                         <div class="flight-search-to-from">
-                            <div class="flight-search-recent-details"><p class="flight-search-recent-details-text">SIN</p></div>
-                            <div class="flight-search-duration">
-                                
+                            <div class="flight-search-recent-details">
+                                <p class="flight-search-recent-details-text">SIN</p>
                             </div>
-                            <div class="flight-search-recent-details"><p class="flight-search-recent-details-text">LAx</p></div>
+                            <div class="flight-search-duration">
+
+                            </div>
+                            <div class="flight-search-recent-details">
+                                <p class="flight-search-recent-details-text">LAx</p>
+                            </div>
                         </div>
                         <p class="flight-search-to-from-text">Depart On: <span>7 Sep 2021</span></p>
                     </div>
@@ -177,7 +196,7 @@
                 <p class="title-container-second">Most Popular Destinations</p>
             </div>
             <div class="cards-container">
-                
+
             </div>
         </div>
         <div class="recommended-holidays">
@@ -246,35 +265,9 @@
                 </div>
             </div>
             <div class="hotel-cards">
-                <div class="hotel-col">
-                    <div class="hotel-card">
-                        <img src="./assets/images/Matterhorn Suites Image.png" alt="">
-                        <div class="hotel-details">
-                            <div class="hotel-details-row">
-                                <p class="hotel-description">Deluxe King Room</p>
-                                <p class="hotel-name">Lake Louise Inn</p>
-                                <p class="hotel-price">$244/night</p>
-                            </div>
-                            <div class="video-button">
-                                <i class="fa-regular fa-circle-play video-play"></i>
-                            </div>
-
-                        </div>
-                        <div class="hotel-rating">
-
-                            <div class="hotel-star">
-                                <i class="fa-solid fa-star star"></i>
-                                <p class="star-point">4.6</p>
-                            </div>
-
-                            <p class="hotel-review">(63 reviews)</p>
-                        </div>
-                        <div class="more-detail-button">
-                            <p>more details</p>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
+            
         </div>
     </section>
 
@@ -343,4 +336,5 @@
     <script src="./scripts/script.js"></script>
     <script src="./scripts/functionality.js"></script>
 </body>
+
 </html>
